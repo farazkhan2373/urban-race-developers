@@ -1,13 +1,14 @@
 // Footer Component
-import { 
-  Phone, 
-  Mail, 
+import {
+  Phone,
+  Mail,
   MapPin,
   Facebook,
   Twitter,
   Instagram,
   Linkedin
 } from 'lucide-react';
+import Image from 'next/image';
 
 const Footer = () => {
   return (
@@ -17,12 +18,14 @@ const Footer = () => {
           {/* Company Info */}
           <div>
             <div className="flex items-center mb-6">
-              <img 
-                src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" 
-                alt="Logo" 
-                className="h-12 w-12 rounded-full object-cover"
+              <Image
+                src="/img/logo.jpeg"
+                alt="Urban Race Developers Logo"
+                height={100}
+                width={70}
+                className="object-cover"
               />
-              <span className="ml-3 text-2xl font-bold">RealEstate</span>
+              <span className="ml-3 text-2xl font-bold">Urban Race Developers</span>
             </div>
             <p className="text-gray-300 mb-6 leading-relaxed">
               Building dreams and creating lasting value through innovative real estate solutions.
@@ -92,7 +95,7 @@ const Footer = () => {
         <div className="border-t border-gray-600 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm mb-4 md:mb-0">
-              © 2025 RealEstate. All rights reserved.
+              © 2025 Urban Race Developers. All rights reserved.
             </p>
             <div className="flex space-x-6 text-sm">
               <a href="#" className="text-gray-400 hover:text-white transition-colors">Privacy Policy</a>
