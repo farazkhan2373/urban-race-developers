@@ -9,7 +9,7 @@ const AboutInfo = () => {
             {/* Left Image */}
             <div className="relative">
               <img 
-                src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=600&h=400&fit=crop" 
+                src="/img/about-page-images/about-us-800x600-2.png" 
                 alt="Modern office building" 
                 className="rounded-lg shadow-lg w-full h-96 object-cover"
               />

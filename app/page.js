@@ -6,7 +6,6 @@ import Image from "next/image";
 import ServicesOverviewHome from "@/components/HomePageComponents/ServicesOverviewHome";
 import TestimonialsSection from "@/components/HomePageComponents/TestimonialsSection";
 import MapSection from "@/components/HomePageComponents/MapSection";
-import Footer from "@/components/Footer/Footer";
 
 export default function Home() {
   return (

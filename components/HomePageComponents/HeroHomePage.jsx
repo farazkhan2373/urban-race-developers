@@ -10,31 +10,31 @@ import {
 const heroSlides = [
     {
         id: 1,
-        image: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80',
+        image: '/img/home-page-images/home-desk-banner-1920x1080-1.png',
         heading: 'Premium Residential Projects',
         subheading: 'Discover your dream home with our exceptional residential developments'
     },
     {
         id: 2,
-        image: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80',
+        image: '/img/home-page-images/home-desk-banner-1920x1080-2.png',
         heading: 'Modern Architecture',
         subheading: 'Contemporary designs that blend luxury with functionality'
     },
     {
         id: 3,
-        image: 'https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80',
+        image: '/img/home-page-images/home-desk-banner-1920x1080-3.png',
         heading: 'Prime Locations',
         subheading: 'Strategic locations with excellent connectivity and amenities'
     },
     {
         id: 4,
-        image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80',
+        image: '/img/home-page-images/home-desk-banner-1920x1080-4.png',
         heading: 'Luxury Living Spaces',
         subheading: 'Experience the epitome of comfort and elegance'
     },
     {
         id: 5,
-        image: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80',
+        image: '/img/home-page-images/home-desk-banner-1920x1080-5.png',
         heading: 'Smart Investments',
         subheading: 'Your gateway to profitable real estate investments'
     }
@@ -58,7 +58,7 @@ const HeroHomePage = () => {
     }, [nextSlide]);
 
     return (
-        <div className="relative h-[80vh] lg:h-[100vh] overflow-hidden">
+        <div className="relative h-[80vh] lg:h-[100vh] overflow-hidden mt-20">
             {heroSlides.map((slide, index) => (
                 <div
                     key={slide.id}

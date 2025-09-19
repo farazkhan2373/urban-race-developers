@@ -6,7 +6,7 @@ const WhyChooseUsBanner = () => {
         {/* Background Image */}
         <div className="absolute inset-0">
           <img 
-            src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=1920&h=1080&fit=crop" 
+            src="/img/why-choose-images/why-us-desk-banner-1920x500.png" 
             alt="Modern construction site" 
             className="w-full h-full object-cover"
           />

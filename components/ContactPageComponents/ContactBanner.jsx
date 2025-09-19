@@ -6,7 +6,7 @@ const ContactBanner = () => {
       {/* Background Image */}
       <div className="absolute inset-0">
         <img 
-          src="https://images.unsplash.com/photo-1423666639041-f56000c27a9a?w=1920&h=1080&fit=crop" 
+          src="/img/contact-page-images/contact-desk-banner-1920x500.png" 
           alt="Contact us office" 
           className="w-full h-full object-cover"
         />

@@ -4,7 +4,7 @@ const AboutBanner = () => {
       {/* Background Image */}
       <div className="absolute inset-0">
         <img 
-          src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=1920&h=1080&fit=crop" 
+          src="/img/about-page-images/about-desk-banner-1920x500.png" 
           alt="Modern office building" 
           className="w-full h-full object-cover"
         />
