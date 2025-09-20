@@ -7,7 +7,7 @@ const page = () => {
   return (
     <div>
       <WhyChooseUsBanner/>
-      <Stats/>
+      {/* <Stats/> */}
       <WhyChooseSection/>
     </div>
   )

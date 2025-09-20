@@ -26,7 +26,7 @@ const AboutHomePage = () => {
               communities, we deliver projects that exceed expectations and create lasting value.
             </p>
             
-            <div className="grid grid-cols-3 gap-6">
+            {/* <div className="grid grid-cols-3 gap-6">
               <div className="text-center">
                 <div className="bg-[#1b2638] text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-3">
                   <Building size={24} />
@@ -48,7 +48,7 @@ const AboutHomePage = () => {
                 <div className="text-2xl font-bold text-[#1b2638]">25+</div>
                 <div className="text-gray-600">Awards</div>
               </div>
-            </div>
+            </div> */}
           </div>
 
           <div className="relative">
@@ -59,10 +59,10 @@ const AboutHomePage = () => {
               alt="About Us"
               className="w-full h-96 object-cover rounded-lg shadow-lg"
             />
-            <div className="absolute -bottom-6 -right-6 bg-[#1b2638] text-white p-6 rounded-lg">
+            {/* <div className="absolute -bottom-6 -right-6 bg-[#1b2638] text-white p-6 rounded-lg">
               <div className="text-3xl font-bold">15+</div>
               <div>Years Experience</div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

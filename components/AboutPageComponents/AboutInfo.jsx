@@ -17,10 +17,10 @@ const AboutInfo = () => {
                 height={500}
                 className="rounded-lg shadow-lg w-full h-96 object-cover"
               />
-              <div className="absolute -bottom-6 -right-6 bg-[#1b2638] text-white p-6 rounded-lg">
+              {/* <div className="absolute -bottom-6 -right-6 bg-[#1b2638] text-white p-6 rounded-lg">
                 <div className="text-3xl font-bold">15+</div>
                 <div className="text-sm">Years Experience</div>
-              </div>
+              </div> */}
             </div>
 
             {/* Right Information */}
@@ -38,7 +38,7 @@ const AboutInfo = () => {
                 we have established ourselves as a trusted name in residential and commercial development. 
                 Our expertise spans across luxury apartments, commercial complexes, and integrated townships.
               </p>
-              <div className="grid grid-cols-2 gap-6 mt-8">
+              {/* <div className="grid grid-cols-2 gap-6 mt-8">
                 <div className="text-center p-4 bg-gray-50 rounded-lg">
                   <div className="text-2xl font-bold text-[#1b2638]">50+</div>
                   <div className="text-gray-600">Projects Completed</div>
@@ -47,7 +47,7 @@ const AboutInfo = () => {
                   <div className="text-2xl font-bold text-[#1b2638]">10K+</div>
                   <div className="text-gray-600">Happy Customers</div>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

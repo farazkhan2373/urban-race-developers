@@ -31,11 +31,11 @@ const WhyChooseSection = () => {
       title: "Timely Delivery",
       description: "We are committed to delivering projects on schedule. Our efficient project management ensures timely completion without compromising quality."
     },
-    {
-      icon: Shield,
-      title: "RERA Compliance",
-      description: "All our projects are RERA registered and compliant, ensuring legal transparency, buyer protection, and adherence to regulatory standards."
-    }
+    // {
+    //   icon: Shield,
+    //   title: "RERA Compliance",
+    //   description: "All our projects are RERA registered and compliant, ensuring legal transparency, buyer protection, and adherence to regulatory standards."
+    // }
   ];
   return (
     <section className="py-20 bg-white">
@@ -47,9 +47,9 @@ const WhyChooseSection = () => {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="flex flex-wrap justify-center gap-8">
             {features.map((feature, index) => (
-              <div key={index} className="bg-gray-50 p-8 rounded-lg hover:shadow-lg transition-all duration-300 hover:-translate-y-2">
+              <div key={index} className="bg-gray-50 p-8 rounded-lg hover:shadow-lg transition-all duration-300 hover:-translate-y-2 w-[350px]">
                 <div className="bg-[#1b2638] text-white w-16 h-16 rounded-lg flex items-center justify-center mb-6">
                   <feature.icon size={28} />
                 </div>
