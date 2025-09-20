@@ -7,35 +7,40 @@ import {
 } from 'lucide-react';
 import Image from 'next/image';
 
-// Mock data for hero slider
+// Mock data for hero slider with separate desktop and mobile images
 const heroSlides = [
     {
         id: 1,
-        image: '/img/home-page-images/home-desk-banner-1920x1080-1.png',
+        desktopImage: '/img/home-page-images/home-desk-banner-1920x1080-1.png',
+        mobileImage: '/img/home-page-images/home-mobile-banner-600x800-1.png',
         heading: 'Premium Residential Projects',
         subheading: 'Discover your dream home with our exceptional residential developments'
     },
     {
         id: 2,
-        image: '/img/home-page-images/home-desk-banner-1920x1080-2.png',
+        desktopImage: '/img/home-page-images/home-desk-banner-1920x1080-2.png',
+        mobileImage: '/img/home-page-images/home-mobile-banner-600x800-2.png',
         heading: 'Modern Architecture',
         subheading: 'Contemporary designs that blend luxury with functionality'
     },
     {
         id: 3,
-        image: '/img/home-page-images/home-desk-banner-1920x1080-3.png',
+        desktopImage: '/img/home-page-images/home-desk-banner-1920x1080-3.png',
+        mobileImage: '/img/home-page-images/home-mobile-banner-600x800-3.png',
         heading: 'Prime Locations',
         subheading: 'Strategic locations with excellent connectivity and amenities'
     },
     {
         id: 4,
-        image: '/img/home-page-images/home-desk-banner-1920x1080-4.png',
+        desktopImage: '/img/home-page-images/home-desk-banner-1920x1080-4.png',
+        mobileImage: '/img/home-page-images/home-mobile-banner-600x800-4.png',
         heading: 'Luxury Living Spaces',
         subheading: 'Experience the epitome of comfort and elegance'
     },
     {
         id: 5,
-        image: '/img/home-page-images/home-desk-banner-1920x1080-5.png',
+        desktopImage: '/img/home-page-images/home-desk-banner-1920x1080-5.png',
+        mobileImage: '/img/home-page-images/home-mobile-banner-600x800-5.png',
         heading: 'Smart Investments',
         subheading: 'Your gateway to profitable real estate investments'
     }
@@ -43,6 +48,22 @@ const heroSlides = [
 
 const HeroHomePage = () => {
     const [currentSlide, setCurrentSlide] = useState(0);
+    const [isMobile, setIsMobile] = useState(false);
+
+    // Check if device is mobile
+    useEffect(() => {
+        const checkIsMobile = () => {
+            setIsMobile(window.innerWidth < 768);
+        };
+
+        // Check on mount
+        checkIsMobile();
+
+        // Listen for resize events
+        window.addEventListener('resize', checkIsMobile);
+        
+        return () => window.removeEventListener('resize', checkIsMobile);
+    }, []);
 
     const nextSlide = useCallback(() => {
         setCurrentSlide((prev) => (prev + 1) % heroSlides.length);
@@ -66,12 +87,22 @@ const HeroHomePage = () => {
                     className={`absolute inset-0 transition-opacity duration-1000 ${index === currentSlide ? "opacity-100" : "opacity-0"
                         }`}
                 >
-                    {/* Background Image */}
+                    {/* Desktop Background Image */}
                     <Image
-                        src={slide.image}
+                        src={slide.desktopImage}
                         alt={slide.heading}
                         fill
-                        className="w-full h-full object-cover"
+                        className="hidden md:block w-full h-full object-cover"
+                        priority={index === 0} // Prioritize first image loading
+                    />
+
+                    {/* Mobile Background Image */}
+                    <Image
+                        src={slide.mobileImage}
+                        alt={slide.heading}
+                        fill
+                        className="block md:hidden w-full h-full object-cover"
+                        priority={index === 0} // Prioritize first image loading
                     />
 
                     {/* Black Overlay */}
@@ -81,48 +112,51 @@ const HeroHomePage = () => {
                     <div className="absolute inset-0 flex items-center">
                         <div className="w-full max-w-7xl mx-auto px-4">
                             <div className="text-white max-w-2xl relative z-10">
-                                <h1 className="text-4xl lg:text-6xl font-bold mb-4 leading-tight">
+                                <h1 className="text-3xl md:text-4xl lg:text-6xl font-bold mb-4 leading-tight">
                                     {slide.heading}
                                 </h1>
-                                <p className="text-xl lg:text-2xl mb-8 leading-relaxed">
+                                <p className="text-lg md:text-xl lg:text-2xl mb-6 md:mb-8 leading-relaxed">
                                     {slide.subheading}
                                 </p>
-                                <button className="bg-[#1b2638] text-white px-8 py-3 rounded-lg hover:bg-opacity-90 transition-colors flex items-center space-x-2">
+                                <button className="bg-[#1b2638] text-white px-6 md:px-8 py-2 md:py-3 rounded-lg hover:bg-opacity-90 transition-colors flex items-center space-x-2 text-sm md:text-base">
                                     <span>Explore Projects</span>
-                                    <ArrowRight size={20} />
+                                    <ArrowRight size={18} className="md:w-5 md:h-5" />
                                 </button>
                             </div>
                         </div>
                     </div>
                 </div>
-
             ))}
 
             {/* Navigation Arrows */}
             <button
                 onClick={prevSlide}
-                className="absolute left-4 top-1/2 transform -translate-y-1/2 p-2 border border-white text-white rounded-full transition-all"
+                className="invisible sm:visible cursor-pointer absolute left-2 md:left-4 top-1/2 transform -translate-y-1/2 p-1.5 md:p-2 border border-white text-white rounded-full transition-all hover:bg-[#1b2638] hover:bg-opacity-20"
+                aria-label="Previous slide"
             >
-                <ChevronLeft size={24} className='' />
+                <ChevronLeft size={20} className=" md:w-6 md:h-6" />
             </button>
             <button
                 onClick={nextSlide}
-                className="absolute right-4 top-1/2 transform -translate-y-1/2 p-2 border border-white text-white rounded-full transition-all"
+                className="invisible sm:visible cursor-pointer absolute right-2 md:right-4 top-1/2 transform -translate-y-1/2 p-1.5 md:p-2 border border-white text-white rounded-full transition-all hover:bg-[#1b2638] hover:bg-opacity-20"
+                aria-label="Next slide"
             >
-                <ChevronRight size={24} className='' />
+                <ChevronRight size={20} className="md:w-6 md:h-6" />
             </button>
 
-            {/* Slide Indicators */}
-                {/* <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
-                    {heroSlides.map((_, index) => (
-                        <button
-                            key={index}
-                            onClick={() => setCurrentSlide(index)}
-                            className={`w-3 h-3 rounded-full transition-all ${index === currentSlide ? 'bg-white' : 'bg-white bg-opacity-50'
-                                }`}
-                        />
-                    ))}
-                </div> */}
+            {/* Slide Indicators - Optional, uncomment if needed */}
+            {/* <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
+                {heroSlides.map((_, index) => (
+                    <button
+                        key={index}
+                        onClick={() => setCurrentSlide(index)}
+                        className={`w-2 h-2 md:w-3 md:h-3 rounded-full transition-all ${
+                            index === currentSlide ? 'bg-white' : 'bg-white bg-opacity-50'
+                        }`}
+                        aria-label={`Go to slide ${index + 1}`}
+                    />
+                ))}
+            </div> */}
         </div>
     );
 };

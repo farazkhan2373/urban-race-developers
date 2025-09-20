@@ -3,13 +3,25 @@ import Image from "next/image"
 const AboutBanner = () => {
   return (
     <section className="relative h-[60vh] flex items-center justify-center mt-20">
-      {/* Background Image */}
-      <div className="absolute inset-0">
+      {/* Desktop Background Image */}
+      <div className="absolute inset-0 hidden md:block">
         <Image 
           src="/img/about-page-images/about-desk-banner-1920x500.png" 
           alt="Modern office building" 
           fill
           className="w-full h-full object-cover"
+          priority
+        />
+      </div>
+      
+      {/* Mobile Background Image */}
+      <div className="absolute inset-0 block md:hidden">
+        <Image 
+          src="/img/about-page-images/about-mobile-banner-800x600.png" 
+          alt="Modern office building" 
+          fill
+          className="w-full h-full object-cover object-center"
+          priority
         />
       </div>
       
@@ -18,8 +30,8 @@ const AboutBanner = () => {
       
       {/* Content */}
       <div className="relative z-10 text-white px-4 w-full max-w-7xl mx-auto">
-        <h1 className="text-5xl md:text-6xl font-bold mb-6">About Us</h1>
-        <p className="text-xl md:text-2xl max-w-3xl leading-relaxed">
+        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 md:mb-6">About Us</h1>
+        <p className="text-lg md:text-xl lg:text-2xl max-w-3xl leading-relaxed">
           Building dreams, creating communities, and shaping the future of real estate development
         </p>
       </div>
