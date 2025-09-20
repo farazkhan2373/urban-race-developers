@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import React from 'react'
 
 const ContactBanner = () => {
@@ -5,8 +6,9 @@ const ContactBanner = () => {
      <section className="relative h-[60vh] flex items-center justify-center mt-20">
       {/* Background Image */}
       <div className="absolute inset-0">
-        <img 
+        <Image 
           src="/img/contact-page-images/contact-desk-banner-1920x500.png" 
+          fill
           alt="Contact us office" 
           className="w-full h-full object-cover"
         />

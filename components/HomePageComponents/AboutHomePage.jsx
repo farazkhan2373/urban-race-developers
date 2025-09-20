@@ -6,6 +6,7 @@ import {
   Award
  
 } from 'lucide-react';
+import Image from 'next/image';
 
 
 const AboutHomePage = () => {
@@ -51,8 +52,10 @@ const AboutHomePage = () => {
           </div>
 
           <div className="relative">
-            <img 
+            <Image 
               src="/img/about-page-images/about-us-800x600-1.png"
+              width={600}
+              height={500}
               alt="About Us"
               className="w-full h-96 object-cover rounded-lg shadow-lg"
             />

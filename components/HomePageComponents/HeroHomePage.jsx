@@ -5,6 +5,7 @@ import {
     ChevronRight,
     ArrowRight
 } from 'lucide-react';
+import Image from 'next/image';
 
 // Mock data for hero slider
 const heroSlides = [
@@ -66,9 +67,10 @@ const HeroHomePage = () => {
                         }`}
                 >
                     {/* Background Image */}
-                    <img
+                    <Image
                         src={slide.image}
                         alt={slide.heading}
+                        fill
                         className="w-full h-full object-cover"
                     />
 

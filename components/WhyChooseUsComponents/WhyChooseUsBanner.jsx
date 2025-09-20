@@ -1,3 +1,4 @@
+import Image from "next/image"
 
 
 const WhyChooseUsBanner = () => {
@@ -5,7 +6,8 @@ const WhyChooseUsBanner = () => {
      <section className="relative h-[60vh] flex items-center justify-center mt-20">
         {/* Background Image */}
         <div className="absolute inset-0">
-          <img 
+          <Image 
+            fill
             src="/img/why-choose-images/why-us-desk-banner-1920x500.png" 
             alt="Modern construction site" 
             className="w-full h-full object-cover"

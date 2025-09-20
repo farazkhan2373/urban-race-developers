@@ -1,11 +1,14 @@
+import Image from "next/image"
+
 const AboutBanner = () => {
   return (
     <section className="relative h-[60vh] flex items-center justify-center mt-20">
       {/* Background Image */}
       <div className="absolute inset-0">
-        <img 
+        <Image 
           src="/img/about-page-images/about-desk-banner-1920x500.png" 
           alt="Modern office building" 
+          fill
           className="w-full h-full object-cover"
         />
       </div>
