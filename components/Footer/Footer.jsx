@@ -14,9 +14,10 @@ const Footer = () => {
   return (
     <footer className="bg-[#1b2638] text-white">
       <div className="max-w-7xl mx-auto px-4 py-12">
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid md:grid-cols-3 lg:grid-cols-3 gap-8">
           {/* Company Info */}
           <div>
+            <a href="/">
             <div className="flex items-center mb-6">
               <Image
                 src="/img/logo.jpeg"
@@ -27,6 +28,7 @@ const Footer = () => {
               />
               <span className="ml-3 text-2xl font-bold">Urban Race Developers</span>
             </div>
+            </a>
             <p className="text-gray-300 mb-6 leading-relaxed">
               Building dreams and creating lasting value through innovative real estate solutions.
             </p>
@@ -52,14 +54,15 @@ const Footer = () => {
             <ul className="space-y-3">
               <li><a href="/" className="text-gray-300 hover:text-white transition-colors">Home</a></li>
               <li><a href="/about" className="text-gray-300 hover:text-white transition-colors">About Us</a></li>
-              <li><a href="/projects/current" className="text-gray-300 hover:text-white transition-colors">Current Projects</a></li>
-              <li><a href="/projects/completed" className="text-gray-300 hover:text-white transition-colors">Completed Projects</a></li>
+              <li><a href="/apartments" className="text-gray-300 hover:text-white transition-colors">Apartments</a></li>
+              {/* <li><a href="/projects/current" className="text-gray-300 hover:text-white transition-colors">Current Projects</a></li>
+              <li><a href="/projects/completed" className="text-gray-300 hover:text-white transition-colors">Completed Projects</a></li> */}
               <li><a href="/contact" className="text-gray-300 hover:text-white transition-colors">Contact Us</a></li>
             </ul>
           </div>
 
           {/* Services */}
-          <div>
+          {/* <div>
             <h3 className="text-xl font-bold mb-6">Services</h3>
             <ul className="space-y-3">
               <li><a href="/services/promoters-builders" className="text-gray-300 hover:text-white transition-colors">Promoters & Builders</a></li>
@@ -67,7 +70,7 @@ const Footer = () => {
               <li><a href="/services/contractors" className="text-gray-300 hover:text-white transition-colors">Contractors</a></li>
               <li><a href="/services/consultants" className="text-gray-300 hover:text-white transition-colors">Consultants</a></li>
             </ul>
-          </div>
+          </div> */}
 
           {/* Contact Info */}
           <div>
@@ -76,17 +79,17 @@ const Footer = () => {
               <div className="flex items-start space-x-3">
                 <MapPin size={20} className="mt-1 flex-shrink-0" />
                 <div>
-                  <p className="text-gray-300">123 Business District</p>
-                  <p className="text-gray-300">Hyderabad, Telangana 500001</p>
+                  <p className="text-gray-300"> 1-24/172/A, (Plot no 172) Snehita Hills, Phase 1, Appa Junction, Hyderabad, Telangana 500091.</p>
+                  {/* <p className="text-gray-300"></p> */}
                 </div>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone size={20} />
-                <p className="text-gray-300">+91 98765 43210</p>
+                <p className="text-gray-300">+91 90307 49957</p>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail size={20} />
-                <p className="text-gray-300">info@realestate.com</p>
+                <p className="text-gray-300">info@urbanracedevelopers.com</p>
               </div>
             </div>
           </div>

@@ -23,11 +23,11 @@ const Header = () => {
                         <div className="flex justify-end items-center space-x-6 text-sm">
                             <div className="flex items-center space-x-2">
                                 <Phone size={14} />
-                                <span>+91 98765 43210</span>
+                                <span>+91 90307 49957</span>
                             </div>
                             <div className="flex items-center space-x-2">
                                 <Mail size={14} />
-                                <span>info@realestate.com</span>
+                                <span>info@urbanracedevelopers.com</span>
                             </div>
                         </div>
                     </div>
@@ -39,6 +39,7 @@ const Header = () => {
                     <div className="container mx-auto px-4">
                         <div className="flex justify-between items-center py-1">
                             {/* Logo */}
+                           <a href='/'>
                             <div className="flex items-center">
                                 <Image
                                     src="/img/logo.jpeg"
@@ -49,12 +50,14 @@ const Header = () => {
                                 />
                                 <span className="hidden sm:inline ml-3 text-2xl font-bold text-[#1b2638]">Urban Race Developers</span>
                             </div>
+                            </a>
 
                             {/* Desktop Navigation */}
                             <nav className="hidden lg:flex items-center space-x-8 font-semibold">
                                 <a href="/" className="text-gray-700 hover:text-[#1b2638] transition-colors ">Home</a>
                                 <a href="/about" className="text-gray-700 hover:text-[#1b2638] transition-colors ">About Us</a>
                                 <a href="/why-choose-us" className="text-gray-700 hover:text-[#1b2638] transition-colors">Why Choose Us</a>
+                                
 
 
                                 {/* Services Dropdown */}
@@ -72,7 +75,7 @@ const Header = () => {
                                 </div> */}
 
                                 {/* Appartment Dropdown */}
-                                <div className="relative group">
+                                {/* <div className="relative group">
                                     <button className="flex items-center space-x-1 text-gray-700 hover:text-[#1b2638] transition-colors">
                                         <span>Appartments</span>
                                         <ChevronDown size={16} />
@@ -81,7 +84,9 @@ const Header = () => {
                                         <a href="/appartments/current" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">Current Projects</a>
                                         <a href="/appartments/completed" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">Completed Projects</a>
                                     </div>
-                                </div>
+                                </div> */}
+                                <a href="/apartments" className="text-gray-700 hover:text-[#1b2638] transition-colors">Apartments</a>
+
 
                                 <a href="/contact" className="text-gray-700 hover:text-[#1b2638] transition-colors">Contact Us</a>
                             </nav>

@@ -8,22 +8,9 @@ const AboutInfo = () => {
     <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            {/* Left Image */}
-            <div className="relative">
-              <Image 
-                src="/img/about-page-images/about-us-800x600-2.png" 
-                alt="Modern office building" 
-                width={600}
-                height={500}
-                className="rounded-lg shadow-lg w-full h-96 object-cover"
-              />
-              {/* <div className="absolute -bottom-6 -right-6 bg-[#1b2638] text-white p-6 rounded-lg">
-                <div className="text-3xl font-bold">15+</div>
-                <div className="text-sm">Years Experience</div>
-              </div> */}
-            </div>
+           
 
-            {/* Right Information */}
+            {/* Left Information */}
             <div>
               <h2 className="text-4xl font-bold text-[#1b2638] mb-6">
                 Leading Real Estate Development Company
@@ -47,6 +34,21 @@ const AboutInfo = () => {
                   <div className="text-2xl font-bold text-[#1b2638]">10K+</div>
                   <div className="text-gray-600">Happy Customers</div>
                 </div>
+              </div> */}
+            </div>
+
+             {/* Right Image */}
+            <div className="relative">
+              <Image 
+                src="/img/about-page-images/about-us-800x600-2.png" 
+                alt="Modern office building" 
+                width={600}
+                height={500}
+                className="rounded-lg shadow-lg w-full h-96 object-cover"
+              />
+              {/* <div className="absolute -bottom-6 -right-6 bg-[#1b2638] text-white p-6 rounded-lg">
+                <div className="text-3xl font-bold">15+</div>
+                <div className="text-sm">Years Experience</div>
               </div> */}
             </div>
           </div>

@@ -104,7 +104,7 @@ const ContactHomePage = () => {
                   </div>
                   <div>
                     <h4 className="font-medium text-gray-900 mb-1">Address</h4>
-                    <p className="text-gray-600">123 Business District, Hyderabad, Telangana 500001</p>
+                    <p className="text-gray-600">1-24/172/A, (Plot no 172) Snehita Hills, Phase 1, Appa Junction, Hyderabad, Telangana 500091.</p>
                   </div>
                 </div>
 
@@ -114,7 +114,7 @@ const ContactHomePage = () => {
                   </div>
                   <div>
                     <h4 className="font-medium text-gray-900 mb-1">Phone</h4>
-                    <p className="text-gray-600">+91 98765 43210</p>
+                    <p className="text-gray-600">+91 90307 49957</p>
                   </div>
                 </div>
 
@@ -124,7 +124,7 @@ const ContactHomePage = () => {
                   </div>
                   <div>
                     <h4 className="font-medium text-gray-900 mb-1">Email</h4>
-                    <p className="text-gray-600">info@realestate.com</p>
+                    <p className="text-gray-600">info@urbanracedevelopers.com</p>
                   </div>
                 </div>
               </div>
