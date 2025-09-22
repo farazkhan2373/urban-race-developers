@@ -6,8 +6,7 @@ const WhyChooseUsBanner = () => {
      <section className="relative h-[60vh] flex items-center justify-center mt-20">
         {/* Background Image */}
         <div className="absolute inset-0">
-          <Image 
-            fill
+          <img     
             src="/img/why-choose-images/why-us-desk-banner-1920x500.png" 
             alt="Modern construction site" 
             className="w-full h-full object-cover"

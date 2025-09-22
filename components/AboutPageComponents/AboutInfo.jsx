@@ -13,17 +13,19 @@ const AboutInfo = () => {
             {/* Left Information */}
             <div>
               <h2 className="text-4xl font-bold text-[#1b2638] mb-6">
-                Leading Real Estate Development Company
+                We are Urban Race Developers
               </h2>
               <p className="text-gray-600 text-lg mb-6 leading-relaxed">
-                Established in 2009, we have grown from a small construction company to one of the leading 
-                real estate developers in the region. Our journey has been marked by consistent growth, 
-                innovative projects, and unwavering commitment to quality.
+               At Urban Race Developers, we don’t just build structures  we build dreams, lifestyles, and thriving communities.
               </p>
               <p className="text-gray-600 text-lg mb-6 leading-relaxed">
-                With over 50 successful projects completed and more than 10,000 satisfied customers, 
-                we have established ourselves as a trusted name in residential and commercial development. 
-                Our expertise spans across luxury apartments, commercial complexes, and integrated townships.
+                Founded with a vision to redefine modern living, we are a passionate team of developers, engineers, and innovators committed to delivering quality residential apartments that blend style, comfort, and functionality. Every project we undertake is driven by a promise timely delivery, uncompromised quality, and transparent dealings so that our customers can trust us with one of their most important life decisions: buying a home.
+              </p>
+              <p className="text-gray-600 text-lg mb-6 leading-relaxed">
+               With  successfully completed project and two ongoing developments, Urban Race Developers is quickly earning a reputation as a trusted name in real estate. Our projects are located in prime areas, thoughtfully designed, and built with the highest standards of construction  ensuring lasting value for generations.nt life decisions: buying a home.
+              </p>
+              <p className="text-gray-600 text-lg mb-6 leading-relaxed">
+              We believe in creating more than just apartments; we create spaces where families grow, friendships flourish, and memories are made.
               </p>
               {/* <div className="grid grid-cols-2 gap-6 mt-8">
                 <div className="text-center p-4 bg-gray-50 rounded-lg">
@@ -39,7 +41,7 @@ const AboutInfo = () => {
 
              {/* Right Image */}
             <div className="relative">
-              <Image 
+              <img 
                 src="/img/about-page-images/about-us-800x600-2.png" 
                 alt="Modern office building" 
                 width={600}

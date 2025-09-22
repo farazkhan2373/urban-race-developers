@@ -41,7 +41,7 @@ const Header = () => {
                             {/* Logo */}
                            <a href='/'>
                             <div className="flex items-center">
-                                <Image
+                                <img
                                     src="/img/logo.jpeg"
                                     alt="Urban Race Developers Logo"
                                     height={100}

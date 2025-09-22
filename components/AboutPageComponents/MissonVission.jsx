@@ -44,10 +44,9 @@ const MissonVission = () => {
                 <h3 className="text-2xl font-bold text-[#1b2638]">Our Mission</h3>
               </div>
               <p className="text-gray-600 leading-relaxed">
-                To create exceptional living and working spaces that enhance communities and improve 
-                quality of life. We are committed to delivering innovative, sustainable, and affordable 
-                real estate solutions that exceed our customers' expectations while contributing to 
-                urban development and economic growth.
+                Deliver on-time, quality construction with attention to detail.
+                Maintain transparent communication with our clients at every step.
+                Develop spaces that are modern, functional, and future-ready.
               </p>
             </div>
 
@@ -59,10 +58,7 @@ const MissonVission = () => {
                 <h3 className="text-2xl font-bold text-[#1b2638]">Our Vision</h3>
               </div>
               <p className="text-gray-600 leading-relaxed">
-                To be the most trusted and preferred real estate developer, known for innovation, 
-                quality, and customer satisfaction. We envision creating landmark developments that 
-                set new standards in the industry while fostering sustainable communities for 
-                future generations.
+                To be the most trusted and innovative real estate developer, delivering sustainable, modern, and community-focused residential spaces.
               </p>
             </div>
           </div>

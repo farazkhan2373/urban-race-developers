@@ -88,21 +88,19 @@ const HeroHomePage = () => {
                         }`}
                 >
                     {/* Desktop Background Image */}
-                    <Image
+                    <img
                         src={slide.desktopImage}
-                        alt={slide.heading}
-                        fill
+                        alt={slide.heading}           
                         className="hidden md:block w-full h-full object-cover"
-                        priority={index === 0} // Prioritize first image loading
+                        
                     />
 
                     {/* Mobile Background Image */}
-                    <Image
+                    <img
                         src={slide.mobileImage}
                         alt={slide.heading}
-                        fill
                         className="block md:hidden w-full h-full object-cover"
-                        priority={index === 0} // Prioritize first image loading
+                        
                     />
 
                     {/* Black Overlay */}

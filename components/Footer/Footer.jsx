@@ -19,7 +19,7 @@ const Footer = () => {
           <div>
             <a href="/">
             <div className="flex items-center mb-6">
-              <Image
+              <img
                 src="/img/logo.jpeg"
                 alt="Urban Race Developers Logo"
                 height={100}

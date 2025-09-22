@@ -5,23 +5,23 @@ const AboutBanner = () => {
     <section className="relative h-[60vh] flex items-center justify-center mt-20">
       {/* Desktop Background Image */}
       <div className="absolute inset-0 hidden md:block">
-        <Image 
+        <img 
           src="/img/about-page-images/about-desk-banner-1920x500.png" 
           alt="Modern office building" 
-          fill
+          
           className="w-full h-full object-cover"
-          priority
+          
         />
       </div>
       
       {/* Mobile Background Image */}
       <div className="absolute inset-0 block md:hidden">
-        <Image 
+        <img 
           src="/img/about-page-images/about-mobile-banner-800x600.png" 
           alt="Modern office building" 
-          fill
+          
           className="w-full h-full object-cover object-center"
-          priority
+          
         />
       </div>
       

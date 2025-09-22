@@ -52,7 +52,7 @@ const AboutHomePage = () => {
           </div>
 
           <div className="relative">
-            <Image 
+            <img 
               src="/img/about-page-images/about-us-800x600-1.png"
               width={600}
               height={500}
