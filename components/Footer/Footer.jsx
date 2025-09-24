@@ -97,17 +97,19 @@ const Footer = () => {
 
         <div className="border-t border-gray-600 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="text-gray-400 text-sm mb-4 md:mb-0 flex items-center">
-              Made with ❤️ by SAMA & CO
-            </p>
             <p className="text-gray-400 text-sm mb-4 md:mb-0">
               © 2025 Urban Race Developers. All rights reserved.
             </p>
-            <div className="flex space-x-6 text-sm">
+            <p className="text-gray-400 text-sm mb-4 md:mb-0 flex items-center">
+              Made with ❤️ by SAMA & CO
+            </p>
+            
+            {/* Legal Pages */}
+            {/* <div className="flex space-x-6 text-sm">
               <a href="#" className="text-gray-400 hover:text-white transition-colors">Privacy Policy</a>
               <a href="#" className="text-gray-400 hover:text-white transition-colors">Terms of Service</a>
-              {/* <a href="#" className="text-gray-400 hover:text-white transition-colors">Cookie Policy</a> */}
-            </div>
+              <a href="#" className="text-gray-400 hover:text-white transition-colors">Cookie Policy</a>
+            </div> */}
           </div>
         </div>
       </div>
