@@ -14,7 +14,7 @@ export default function Home() {
    <AboutHomePage/>
    <ContactHomePage/>
    <ApartmentSectionHome/>
-   <ServicesOverviewHome/>
+   {/* <ServicesOverviewHome/> */}
    {/* <TestimonialsSection/> */}
    <MapSection/>
    </>

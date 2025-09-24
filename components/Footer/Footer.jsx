@@ -3,7 +3,7 @@ import {
   Phone,
   Mail,
   MapPin,
-  Facebook,
+  Youtube,
   Twitter,
   Instagram,
   Linkedin
@@ -33,16 +33,16 @@ const Footer = () => {
               Building dreams and creating lasting value through innovative real estate solutions.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="border border-white p-2 rounded-full transition-colors">
-                <Facebook size={20} />
+              <a href="https://www.youtube.com/@urbanracedeveloper" target='_blank' className="border border-white p-2 rounded-full transition-colors">
+                <Youtube size={20} />
               </a>
-              <a href="#" className="border border-white p-2 rounded-full transition-colors">
+              <a href="https://x.com/NayeemAhme41839" target='_blank' className="border border-white p-2 rounded-full transition-colors">
                 <Twitter size={20} />
               </a>
-              <a href="#" className="border border-white p-2 rounded-full transition-colors">
+              <a href="https://www.instagram.com/urbanracedevelopers/?hl=en" target='_blank' className="border border-white p-2 rounded-full transition-colors">
                 <Instagram size={20} />
               </a>
-              <a href="#" className="border border-white p-2 rounded-full transition-colors">
+              <a href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_nav-header-signin" target='_blank' className="border border-white p-2 rounded-full transition-colors">
                 <Linkedin size={20} />
               </a>
             </div>
@@ -97,13 +97,16 @@ const Footer = () => {
 
         <div className="border-t border-gray-600 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
+            <p className="text-gray-400 text-sm mb-4 md:mb-0 flex items-center">
+              Made with ❤️ by SAMA & CO
+            </p>
             <p className="text-gray-400 text-sm mb-4 md:mb-0">
               © 2025 Urban Race Developers. All rights reserved.
             </p>
             <div className="flex space-x-6 text-sm">
               <a href="#" className="text-gray-400 hover:text-white transition-colors">Privacy Policy</a>
               <a href="#" className="text-gray-400 hover:text-white transition-colors">Terms of Service</a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">Cookie Policy</a>
+              {/* <a href="#" className="text-gray-400 hover:text-white transition-colors">Cookie Policy</a> */}
             </div>
           </div>
         </div>
