@@ -130,7 +130,7 @@ const ContactHomePage = () => {
               </div>
             </div>
 
-            <div className="bg-[#1b2638] text-white p-6 rounded-lg">
+            {/* <div className="bg-[#1b2638] text-white p-6 rounded-lg">
               <h4 className="text-xl font-bold mb-4">Office Hours</h4>
               <div className="space-y-2">
                 <div className="flex justify-between">
@@ -146,7 +146,7 @@ const ContactHomePage = () => {
                   <span>Closed</span>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
