@@ -42,13 +42,13 @@ const Header = () => {
                            <a href='/'>
                             <div className="flex items-center">
                                 <img
-                                    src="/img/logo.jpeg"
+                                    src="/img/urban-race-logo.jpg"
                                     alt="Urban Race Developers Logo"
-                                    height={100}
-                                    width={70}
+                                    height={80}
+                                    width={130}
                                     className="object-cover"
                                 />
-                                <span className="hidden sm:inline ml-3 text-2xl font-bold text-[#1b2638]">Urban Race Developers</span>
+                                {/* <span className="hidden sm:inline ml-3 text-2xl font-bold text-[#1b2638]">Developers</span> */}
                             </div>
                             </a>
 

@@ -20,10 +20,10 @@ const Footer = () => {
             <a href="/">
             <div className="flex items-center mb-6">
               <img
-                src="/img/logo.jpeg"
+                src="/img/urban-race-logo.jpg"
                 alt="Urban Race Developers Logo"
-                height={100}
-                width={70}
+                height={80}
+                width={80}
                 className="object-cover"
               />
               <span className="ml-3 text-2xl font-bold">Urban Race Developers</span>
