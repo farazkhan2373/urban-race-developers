@@ -23,7 +23,7 @@ const AboutHomePage = () => {
               Founded with a vision to redefine modern living, we are a passionate team of developers, engineers, and innovators committed to delivering quality residential apartments that blend style, comfort, and functionality. Every project we undertake is driven by a promise timely delivery, uncompromised quality, and transparent dealings so that our customers can trust us with one of their most important life decisions: buying a home.
             </p>
             <p className="text-gray-600 text-lg mb-2 leading-relaxed">
-              With  successfully completed project and two ongoing developments, Urban Race Developers is quickly earning a reputation as a trusted name in real estate. Our projects are located in prime areas, thoughtfully designed, and built with the highest standards of construction  ensuring lasting value for generations.nt life decisions: buying a home.
+              With  successfully completed project and ongoing developments, Urban Race Developers is quickly earning a reputation as a trusted name in real estate. Our projects are located in prime areas, thoughtfully designed, and built with the highest standards of construction  ensuring lasting value for generations.nt life decisions: buying a home.
             </p>
             <p className="text-gray-600 text-lg mb-2 leading-relaxed">
               We believe in creating more than just apartments; we create spaces where families grow, friendships flourish, and memories are made.
