@@ -34,7 +34,9 @@ const ContactModal = ({ isOpen, onClose, apartmentName }) => {
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4">
+    <>
+      <div className='fixed inset-0 bg-black opacity-80'  ></div>
+    <div className="fixed inset-0  z-50 flex items-center justify-center p-4">
       <div className="bg-white rounded-lg max-w-md w-full p-6">
         <div className="flex justify-between items-center mb-6">
           <h3 className="text-2xl font-bold text-[#1b2638]">Contact Us</h3>
@@ -56,8 +58,8 @@ const ContactModal = ({ isOpen, onClose, apartmentName }) => {
               name="name"
               value={formData.name}
               onChange={handleChange}
-              className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-[#1b2638]"
-              placeholder="Your Name"
+              className="text-black w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-[#1b2638]"
+              // placeholder="Your Name"
             />
           </div>
           
@@ -70,8 +72,8 @@ const ContactModal = ({ isOpen, onClose, apartmentName }) => {
               name="email"
               value={formData.email}
               onChange={handleChange}
-              className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-[#1b2638]"
-              placeholder="your@email.com"
+              className="text-black w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-[#1b2638]"
+              // placeholder="your@email.com"
             />
           </div>
           
@@ -84,8 +86,8 @@ const ContactModal = ({ isOpen, onClose, apartmentName }) => {
               name="phone"
               value={formData.phone}
               onChange={handleChange}
-              className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-[#1b2638]"
-              placeholder="Your Phone Number"
+              className="text-black w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-[#1b2638]"
+              // placeholder="Your Phone Number"
             />
           </div>
           
@@ -98,8 +100,8 @@ const ContactModal = ({ isOpen, onClose, apartmentName }) => {
               value={formData.message}
               onChange={handleChange}
               rows="4"
-              className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-[#1b2638]"
-              placeholder={`I'm interested in ${apartmentName}...`}
+              className="text-black w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-[#1b2638]"
+              // placeholder={`I'm interested in ${apartmentName}...`}
             ></textarea>
           </div>
           
@@ -122,6 +124,7 @@ const ContactModal = ({ isOpen, onClose, apartmentName }) => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 
@@ -152,20 +155,20 @@ const ApartmentsPage = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50 mt-24">
+    <div className="min-h-screen bg-gray-50">
        <HeroApartment />
       
       {/* Apartments Section - Our Projects */}
-      <section className="py-20">
+      <section className="py-10">
         <div className="max-w-7xl mx-auto px-4">
-          <div className="text-center mb-16">
+          <div className="text-center mb-10">
             <h2 className="text-4xl font-bold text-[#1b2638] mb-4">Our Projects</h2>
             <p className="text-gray-600 text-lg max-w-2xl mx-auto">
               Each project represents our commitment to quality, innovation, and creating homes that inspire
             </p>
           </div>
 
-          <div className="space-y-16">
+          <div className="">
             {/* Villa 97 Component */}
           <Villa97 openContactModal={openContactModal} />
             

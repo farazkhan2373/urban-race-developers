@@ -5,19 +5,19 @@ const apartments = [
   {
     id: 1,
     name: 'Villa 97 – Moinabad',
-    image: 'https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80',
+    image: '/img/apartments-images/villa-97.jpeg',
     description: 'Bespoke luxury villa designed with elegance and comfort.'
   },
   {
     id: 2,
     name: 'Maple West',
-    image: 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80',
+    image: '/img/apartments-images/mapple-west.jpeg',
     description: 'Premium apartments crafted for modern living with world-class amenities.'
   },
   {
     id: 3,
     name: 'Eagle Heights',
-    image: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80',
+    image: '/img/apartments-images/eagle-heights.jpeg',
     description: 'High-rise luxury apartments with panoramic views and cutting-edge design.'
   }
 ];

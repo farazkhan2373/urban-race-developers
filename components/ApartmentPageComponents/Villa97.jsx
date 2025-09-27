@@ -7,7 +7,7 @@ const Villa97Component = ({ openContactModal }) => {
     name: 'Villa 97 – Moinabad',
     emoji: '🏡',
     status: 'Completed Project',
-    image: 'https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+    image: '/img/apartments-images/villa-97.jpeg',
     shortDescription: 'Villa 97 at Moinabad is a bespoke luxury villa designed with elegance and comfort, offering a private retreat amidst nature.',
     longDescription: 'Villa 97 is an exclusive individual villa by UrbanRace Developers, crafted as a one-of-a-kind residence in Moinabad. This project reflects timeless architecture, spacious interiors, and premium finishes that elevate everyday living. Surrounded by greenery and designed for those who value privacy and sophistication, Villa 97 stands as a completed milestone that showcases UrbanRace Developers\' attention to detail and quality craftsmanship.',
     features: ['Private Garden', 'Premium Finishes', 'Spacious Interiors', '24/7 Security'],
@@ -15,14 +15,14 @@ const Villa97Component = ({ openContactModal }) => {
   };
 
   return (
-    <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 items-center">
+    <div id='villa-97' className="flex flex-col lg:flex-row gap-8 lg:gap-12 items-center py-10">
       {/* Image Section */}
       <div className="flex-1 w-full">
         <div className="relative overflow-hidden rounded-2xl shadow-2xl">
           <img 
             src={apartment.image} 
             alt={apartment.name}
-            className="w-full h-64 md:h-80 lg:h-96 object-cover transform hover:scale-105 transition-transform duration-500"
+            className="w-full h-64 md:h-80 lg:h-[600px] object-cover transform hover:scale-105 transition-transform duration-500"
           />
           <div className="absolute top-4 left-4">
             <span className={`px-3 py-1 rounded-full text-sm font-medium ${
