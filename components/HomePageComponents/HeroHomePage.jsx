@@ -11,36 +11,36 @@ import Image from 'next/image';
 const heroSlides = [
     {
         id: 1,
-        desktopImage: '/img/home-page-images/home-desk-banner-1920x1080-1.png',
-        mobileImage: '/img/home-page-images/home-mobile-banner-600x800-1.png',
+        desktopImage: '/img/home-page-images/home-desk-banner-1920x1080-1.webp',
+        mobileImage: '/img/home-page-images/home-mobile-banner-600x800-1.webp',
         heading: 'Premium Residential Projects',
         subheading: 'Discover your dream home with our exceptional residential developments'
     },
     {
         id: 2,
-        desktopImage: '/img/home-page-images/home-desk-banner-1920x1080-2.png',
-        mobileImage: '/img/home-page-images/home-mobile-banner-600x800-2.png',
+        desktopImage: '/img/home-page-images/home-desk-banner-1920x1080-2.webp',
+        mobileImage: '/img/home-page-images/home-mobile-banner-600x800-2.webp',
         heading: 'Modern Architecture',
         subheading: 'Contemporary designs that blend luxury with functionality'
     },
     {
         id: 3,
-        desktopImage: '/img/home-page-images/home-desk-banner-1920x1080-3.png',
-        mobileImage: '/img/home-page-images/home-mobile-banner-600x800-3.png',
+        desktopImage: '/img/home-page-images/home-desk-banner-1920x1080-3.webp',
+        mobileImage: '/img/home-page-images/home-mobile-banner-600x800-3.webp',
         heading: 'Prime Locations',
         subheading: 'Strategic locations with excellent connectivity and amenities'
     },
     {
         id: 4,
-        desktopImage: '/img/home-page-images/home-desk-banner-1920x1080-4.png',
-        mobileImage: '/img/home-page-images/home-mobile-banner-600x800-4.png',
+        desktopImage: '/img/home-page-images/home-desk-banner-1920x1080-4.webp',
+        mobileImage: '/img/home-page-images/home-mobile-banner-600x800-4.webp',
         heading: 'Luxury Living Spaces',
         subheading: 'Experience the epitome of comfort and elegance'
     },
     {
         id: 5,
-        desktopImage: '/img/home-page-images/home-desk-banner-1920x1080-5.png',
-        mobileImage: '/img/home-page-images/home-mobile-banner-600x800-5.png',
+        desktopImage: '/img/home-page-images/home-desk-banner-1920x1080-5.webp',
+        mobileImage: '/img/home-page-images/home-mobile-banner-600x800-5.webp',
         heading: 'Smart Investments',
         subheading: 'Your gateway to profitable real estate investments'
     }

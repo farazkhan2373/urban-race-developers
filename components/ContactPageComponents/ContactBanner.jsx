@@ -1,13 +1,21 @@
-import Image from 'next/image'
 import React from 'react'
 
 const ContactBanner = () => {
   return (
-     <section className="relative h-[60vh] flex items-center justify-center mt-20">
-      {/* Background Image */}
-      <div className="absolute inset-0">
+    <section className="relative h-[70vh] md:h-[60vh] flex items-center justify-center mt-20">
+      {/* Desktop Background Image */}
+      <div className="absolute inset-0 hidden md:block">
         <img 
-          src="/img/contact-page-images/contact-desk-banner-1920x500.png" 
+          src="/img/contact-page-images/contact-desk-banner-1920x500.webp" 
+          alt="Contact us office" 
+          className="w-full h-full object-cover"
+        />
+      </div>
+      
+      {/* Mobile Background Image */}
+      <div className="absolute inset-0 block md:hidden">
+        <img 
+          src="/img/contact-page-images/contact-mobile-banner-600x800.webp" 
           alt="Contact us office" 
           className="w-full h-full object-cover"
         />

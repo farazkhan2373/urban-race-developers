@@ -42,7 +42,7 @@ const AboutInfo = () => {
              {/* Right Image */}
             <div className="relative">
               <img 
-                src="/img/about-page-images/about-us-800x600-2.png" 
+                src="/img/about-page-images/about-us-800x600-2.webp" 
                 alt="Modern office building" 
                 width={600}
                 height={500}

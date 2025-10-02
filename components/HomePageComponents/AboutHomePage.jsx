@@ -56,7 +56,7 @@ const AboutHomePage = () => {
 
           <div className="relative">
             <img 
-              src="/img/about-page-images/about-us-800x600-1.png"
+              src="/img/about-page-images/about-us-800x600-1.webp"
               width={600}
               height={500}
               alt="About Us"

@@ -6,7 +6,7 @@ const AboutBanner = () => {
       {/* Desktop Background Image */}
       <div className="absolute inset-0 hidden md:block">
         <img 
-          src="/img/about-page-images/about-desk-banner-1920x500.png" 
+          src="/img/about-page-images/about-desk-banner-1920x500.webp" 
           alt="Modern office building" 
           
           className="w-full h-full object-cover"
@@ -17,7 +17,7 @@ const AboutBanner = () => {
       {/* Mobile Background Image */}
       <div className="absolute inset-0 block md:hidden">
         <img 
-          src="/img/about-page-images/about-mobile-banner-800x600.png" 
+          src="/img/about-page-images/about-mobile-banner-800x600.webp" 
           alt="Modern office building" 
           
           className="w-full h-full object-cover object-center"

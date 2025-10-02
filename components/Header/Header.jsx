@@ -77,7 +77,7 @@ const Header = () => {
                                 className="lg:hidden"
                                 onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
                             >
-                                {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+                                {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} className='text-[#1b2638]' />}
                             </button>
                         </div>
                     </div>
@@ -89,8 +89,10 @@ const Header = () => {
                                 <a href="/" className="block text-gray-700 hover:text-[#1b2638]">Home</a>
                                 <a href="/about" className="block text-gray-700 hover:text-[#1b2638]">About Us</a>
                                 <a href="/why-choose-us" className="block text-gray-700 hover:text-[#1b2638]">Why Choose Us</a>
+                                <a href="/apartments" className="block text-gray-700 hover:text-[#1b2638]">Apartments</a>
+
                                 
-                                <div>
+                                {/* <div>
                                     <button
                                         onClick={() => setIsAppartmentOpen(!isAppartmentOpen)}
                                         className="flex items-center justify-between w-full text-gray-700 hover:text-[#1b2638]"
@@ -104,7 +106,7 @@ const Header = () => {
                                             <a href="/appartments/completed" className="block text-gray-600 hover:text-[#1b2638]">Completed Projects</a>
                                         </div>
                                     )}
-                                </div>
+                                </div> */}
 
                                 <a href="/contact" className="block text-gray-700 hover:text-[#1b2638]">Contact Us</a>
                             </nav>
