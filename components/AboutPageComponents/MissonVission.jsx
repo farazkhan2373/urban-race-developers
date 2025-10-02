@@ -27,7 +27,7 @@ const MissonVission = () => {
   ];
 
   return (
-     <section className="py-20 bg-gray-50">
+     <section className="py-10 md:py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-[#1b2638] mb-4">Our Foundation</h2>

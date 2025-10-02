@@ -15,7 +15,7 @@ const MapSection = () => {
   const mapEmbedUrl = "https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3808.2533063668798!2d78.36915599999999!3d17.351540000000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTfCsDIxJzA1LjUiTiA3OMKwMjInMDkuMCJF!5e0!3m2!1sen!2sin!4v1758446524831!5m2!1sen!2sin";
 
   return (
-    <section className="py-20 bg-white">
+    <section className="py-10 md:py-16 bg-white">
       <div className="max-w-7xl mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-[#1b2638] mb-4">Find Us</h2>
