@@ -1,31 +1,16 @@
 // Contact Form Section
 'use client'
-import React, { useState } from 'react';
+import React from 'react';
 import { 
   Phone, 
   Mail, 
   MapPin,
 } from 'lucide-react';
+import ContactForm from '../LeadForm/ContactForm';
+
+
 const ContactHomePage = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    message: ''
-  });
-
-  const handleInputChange = (e) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
-    });
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Handle form submission here
-    console.log('Form submitted:', formData);
-  };
+ 
 
   return (
     <section className="py-10 md:py-16 bg-white">
@@ -38,58 +23,7 @@ const ContactHomePage = () => {
         <div className="grid lg:grid-cols-2 gap-12">
           {/* Contact Form */}
           <div className="bg-gray-50 p-8 rounded-lg">
-            <form onSubmit={handleSubmit} className="space-y-6">
-              <div>
-                <label className="block text-gray-700 font-medium mb-2">Name</label>
-                <input 
-                  type="text"
-                  name="name"
-                  value={formData.name}
-                  onChange={handleInputChange}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#1b2638] focus:border-transparent text-black"
-                  required
-                />
-              </div>
-              <div>
-                <label className="block text-gray-700 font-medium mb-2">Email</label>
-                <input 
-                  type="email"
-                  name="email"
-                  value={formData.email}
-                  onChange={handleInputChange}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#1b2638] focus:border-transparent text-black"
-                  required
-                />
-              </div>
-              <div>
-                <label className="block text-gray-700 font-medium mb-2">Phone Number</label>
-                <input 
-                  type="tel"
-                  name="phone"
-                  value={formData.phone}
-                  onChange={handleInputChange}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#1b2638] focus:border-transparent text-black"
-                  required
-                />
-              </div>
-              <div>
-                <label className="block text-gray-700 font-medium mb-2">Message</label>
-                <textarea 
-                  name="message"
-                  value={formData.message}
-                  onChange={handleInputChange}
-                  rows="4"
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#1b2638] focus:border-transparent text-black"
-                  required
-                ></textarea>
-              </div>
-              <button 
-                type="submit"
-                className="w-full bg-[#1b2638] text-white py-3 rounded-lg hover:bg-opacity-90 transition-colors font-medium"
-              >
-                Send Message
-              </button>
-            </form>
+            <ContactForm/>
           </div>
 
           {/* Contact Information */}
