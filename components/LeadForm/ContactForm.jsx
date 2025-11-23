@@ -25,7 +25,7 @@ const ContactForm = () => {
     setStatus(null)
 
     try {
-      const response = await fetch("mail.php", {
+      const response = await fetch("https://urbanracedevelopers.com/mail.php", {
         method: "POST",
         headers: {
           "Content-Type": "application/x-www-form-urlencoded",
